@@ -78,7 +78,10 @@ void test_student_implementation() {
   free(removed_empty);
 
   char* removed_one = remove_last(&one_list);
+
+  assert(!strcmp(removed_one, "systems"));
   free(removed_one);
+
   assert(length_list(one_list) == 1);
   assert(!one_list->next);
   assert(!one_list->prev);
@@ -130,6 +133,8 @@ void test_linked_list() {
 
   // TEST REMOVE FIRST
   char* removed = remove_first(&new_list);
+
+  assert(!strcmp(removed, "test"));
   free(removed);
   // now the list looks like: test1 -> test2
 
