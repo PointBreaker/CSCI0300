@@ -3,7 +3,7 @@ CXXFLAGS = -g3 -Wall -Wextra -Wconversion -Wcast-align -g -fsanitize=address
 
 .PHONY: all clean format
 
-all: 131sh
+all: 300sh
 
 format:
 	clang-format -style=Google -i *.cpp
@@ -11,8 +11,8 @@ format:
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-131sh: sh.o builtin.o
+300sh: sh.o builtin.o
 	$(CXX) $(CXXFLAGS) $^ -o $@
 
 clean:
-	rm -f 131sh *.o
+	rm -f 300sh *.o

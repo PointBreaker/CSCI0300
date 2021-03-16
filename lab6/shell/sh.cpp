@@ -109,7 +109,7 @@ void handle_input(char* input_buf) {
 int main() {
   while (1) {
     // print prompt
-    printf("131sh> ");
+    printf("300sh> ");
     fflush(stdout);
 
     // Read from standard input into the input buffer
