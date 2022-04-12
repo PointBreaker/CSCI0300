@@ -19,12 +19,12 @@
  */
 
 void swap(char *a[], char *b[]) {
-    char *temp = *a;
-    *a = *b;
-    *b = temp;
+  char *temp = *a;
+  *a = *b;
+  *b = temp;
 }
-void reverse_arr(char** arr, int num) {
-    for (int i = 0, j = num - 1; i < j; i++, j--) {
-        swap(&arr[i], &arr[j]);
-    }
+void reverse_arr(char **arr, int num) {
+  for (int i = 0, j = num - 1; i < j; i++, j--) {
+    swap(&arr[i], &arr[j]);
+  }
 }
